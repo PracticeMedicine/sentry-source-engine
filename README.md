@@ -61,7 +61,7 @@ Navigate to any project, right-click the `Source Files` folder and click on `Add
 Click on `Existing Item`. \
 ![bruh](readme_assets/step5_pic_4.png) \
 This dialog will appear. Navigate to the `shared` folder (located in `src/game/shared`). \
-![bruh](readme_assets/readme_assets/step5_pic_5.png) \
+![bruh](readme_assets/step5_pic_5.png) \
 
 Now, find and select both `rw_sentry_manager.cpp` and `rw_sentry_manager.h` files then click on `Add`.
 ![bruh](readme_assets/step5_pic_6.png)
