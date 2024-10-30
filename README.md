@@ -68,7 +68,7 @@ Now, find and select both `rw_sentry_manager.cpp` and `rw_sentry_manager.h` file
 
 ### STEP 6
 Once you have both of the source files added, let's edit something on `rw_sentry_manager.cpp`. \
-Go to around line 32 and edit the URL to your Sentry project's DSN link (see https://docs.sentry.io/concepts/key-terms/dsn-explainer/#where-to-find-your-dsn on where to get your project's DSN link).
+Go to around line 32 and replace the URL (underlined with the green color) with your Sentry project's DSN link (see https://docs.sentry.io/concepts/key-terms/dsn-explainer/#where-to-find-your-dsn on where to get your project's DSN link).
 ![bruh](readme_assets/step6_pic_0.png) \
 Now, on to the main part. \
 Open up `cdll_client_int.cpp` (it's located in your Client project)\
