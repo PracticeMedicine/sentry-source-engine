@@ -20,6 +20,10 @@
 
 // replace this with your Sentry project's DSN link
 #define SENTRY_DSN_LINK "<your-dsn-link-here>"
+// replace this with anything you want
+#define SENTRY_RELEASE "mymod@version"
+// replace this with anything you want
+#define SENTRY_ENVIRONMENT "development"
 
 #ifdef _WIN32 // dw its gonna still work in the 64 bit config
 #define SENTRY_CRASHPADEXE_NAME "aridity_crashpad.exe"
@@ -87,9 +91,9 @@ bool CSentryMgr::Init()
 
 	sentry_options_set_handler_path(options, handlerPath);
 	sentry_options_set_database_path(options, dbPath);
-	sentry_options_set_release(options, "bf@0.6.0");
+	sentry_options_set_release(options, SENTRY_RELEASE);
 	sentry_options_set_debug(options, 1);
-	sentry_options_set_environment(options, "production");
+	sentry_options_set_environment(options, SENTRY_ENVIRONMENT);
 
 	sentry_value_set_stacktrace(exc, NULL, 0);
 	sentry_event_add_exception(event, exc);
