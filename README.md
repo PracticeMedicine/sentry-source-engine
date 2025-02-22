@@ -10,11 +10,11 @@ Here's the list of things you require before you continue on this tutorial:
 - Visual Studio Community/Professional 2022 (you can download it here: https://visualstudio.microsoft.com) with Desktop development with C++ workload and C/C++ v143 MFC modules
 - Python 3 (you need this for compiling the latest SDK 2013 code)
 
-First, you need to add this in both of your client and server VPC scripts:
+First, you need to add this at the top of both of your client and server VPC scripts:
 ```vpc
-	...
-	$Include "$SRCDIR\game\shared\sentry.vpc"
-	...
+...
+$Include "$SRCDIR\game\shared\sentry.vpc"
+...
 ```
 
 Recreate the client and server projects by running `createallprojects.bat` and open "everything.sln" with Visual Studio 2022.
