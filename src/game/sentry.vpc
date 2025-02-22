@@ -1,0 +1,30 @@
+//-----------------------------------------------------------------------------
+//	SENTRY.VPC
+//		Must be included in client_*.vpc and server_*.vpc!
+//-----------------------------------------------------------------------------
+
+$Configuration
+{
+    $Compiler
+	{
+		$AdditionalIncludeDirectories "$BASE;$SRCDIR\thirdparty\sentry_native\include" //[$ENABLE_SENTRY]
+		$PreprocessorDefinitions	"$BASE;_USE_SENTRY" //[$ENABLE_SENTRY]
+	}
+}
+
+$Project
+{
+    $Folder "Link Libraries"
+	{
+		$Lib "$SRCDIR\thirdparty\sentry_native\lib\sentry" //[$ENABLE_SENTRY]
+	}
+    
+    $Folder "Source Files"
+    {
+        $Folder "Sentry Native"
+        {
+            $File "$SRCDIR\game\shared\sentry\sentry_mgr.cpp"
+            $File "$SRCDIR\game\shared\sentry\sentry_mgr.h"
+        }
+    }
+}
