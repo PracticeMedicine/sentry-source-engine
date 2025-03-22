@@ -1,4 +1,4 @@
-//=================== Copyright (c) 2025 The Aridity Team, all rights reserved. ===================//
+//=================== Copyright (c) 2025 PracticeMedicine, all rights reserved. ===================//
 //
 // Purpose: Sentry integration
 //
