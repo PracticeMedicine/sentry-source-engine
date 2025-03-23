@@ -1,6 +1,9 @@
 # sentry-source-engine
 This repository contains the files needed to implement Sentry to the Source engine. This code was published in hope that this could help developers trace player's session when crashing.
 
+> [!WARNING]
+> This has been tested on Linux using the latest Source SDK 2013 but there are some "could not library client" errors for some reason.
+
 **This will contain both x64 and x86 binaries of Sentry Native.**
 
 ## How do I add this into my sourcemod?
