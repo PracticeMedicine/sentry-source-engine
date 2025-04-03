@@ -1,6 +1,9 @@
 # sentry-source-engine
 This repository contains the files needed to implement Sentry to the Source engine. This code was published in hope that this could help developers trace player's session when crashing.
 
+> [!NOTE]
+> As of 04/03/2025, The code for the Sentry Native implementation in the Source engine is no longer an "Aridity Team" project and is now a personal project of **mine**.
+
 > [!WARNING]
 > This has been tested on Linux using the latest Source SDK 2013 but there are some "could not library client" errors for some reason.
 
