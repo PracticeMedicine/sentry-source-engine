@@ -6,6 +6,9 @@ This repository contains the files needed to implement Sentry to the Source engi
 
 > [!WARNING]
 > This has been tested on Linux using the latest Source SDK 2013 but there are some "could not library client" errors for some reason.
+>
+> **EDIT** \
+> Follow-up message: The game/mod's `bin` (`bin/linux64`) folder isn't included in the `LD_LIBRARY_PATH` variable, the only way to get the Sentry implementation working on Linux is to place `libsentry.so` on the `Source SDK Base 2013 Multiplayer/bin/linux64` folder.
 
 **This will contain both x64 and x86 binaries of Sentry Native.**
 
