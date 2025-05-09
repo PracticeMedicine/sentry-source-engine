@@ -26,9 +26,9 @@
 #define SENTRY_ENVIRONMENT "development"
 
 #ifdef _WIN32 // dw its gonna still work in the 64 bit config
-#define SENTRY_CRASHPADEXE_NAME "aridity_crashpad.exe"
+#define SENTRY_CRASHPADEXE_NAME "crashpad_handler.exe"
 #else
-#define SENTRY_CRASHPADEXE_NAME "aridity_crashpad"
+#define SENTRY_CRASHPADEXE_NAME "crashpad_handler"
 #endif
 
 CSentryMgr::CSentryMgr()
